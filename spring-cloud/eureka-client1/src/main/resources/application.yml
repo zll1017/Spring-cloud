@@ -1,0 +1,10 @@
+
+server:
+  port: 8083
+spring:
+  application:
+    name: test-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://master:8761/eureka/

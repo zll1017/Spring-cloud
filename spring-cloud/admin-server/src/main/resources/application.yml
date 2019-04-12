@@ -1,0 +1,15 @@
+
+server:
+  port: 9002
+spring:
+  application:
+    name: SpringBootAdminServer
+  boot:
+    admin:
+      turbine:
+        clusters: default
+        url: http://localhost:8031/turbine.stream
+eureka:
+  client:
+    service-url:
+      defaultZone: http://slave:8761/eureka/

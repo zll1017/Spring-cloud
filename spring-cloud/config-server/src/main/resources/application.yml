@@ -1,0 +1,18 @@
+
+server:
+  port: 9004
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zll1017/simplemall
+          search-paths: repo
+          basedir: /tmp/spring-cloud-repo
+          force-pull: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://slave:8761/eureka/
